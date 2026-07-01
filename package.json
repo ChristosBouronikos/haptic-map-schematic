@@ -1,0 +1,34 @@
+{
+  "name": "haptic-map-schematic",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": "Bouronikos Christos <chrisbouronikos@gmail.com>",
+  "homepage": "https://christosbouronikos.github.io/haptic-map-schematic/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChristosBouronikos/haptic-map-schematic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChristosBouronikos/haptic-map-schematic/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://paypal.me/christosbouronikos"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.3",
+    "vite": "^8.1.2"
+  }
+}
