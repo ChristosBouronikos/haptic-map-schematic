@@ -53,6 +53,8 @@ Expected repository: [ChristosBouronikos/haptic-map-schematic](https://github.co
 
 Expected Pages URL after the first successful workflow run: [https://christosbouronikos.github.io/haptic-map-schematic/](https://christosbouronikos.github.io/haptic-map-schematic/)
 
+If the published site opens as a blank page and the browser reports a 404 for `/src/main.jsx`, GitHub Pages is still serving the repository source HTML instead of the built `dist` output. Switch the Pages source to **GitHub Actions** and rerun the workflow.
+
 ## Data Notes
 
 The app runs entirely in the browser. It uses a neutral CARTO light basemap with OpenStreetMap attribution for the map view, and Overpass API for feature data. Large selected areas can return many buildings and roads, so the app keeps category-specific render limits for a responsive schematic preview.
