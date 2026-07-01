@@ -1,5 +1,7 @@
 # Haptic Map Schematic, by Bouronikos Christos
 
+Live site: [https://christosbouronikos.github.io/haptic-map-schematic/](https://christosbouronikos.github.io/haptic-map-schematic/)
+
 A GitHub Pages-ready React/Vite app for selecting an OpenStreetMap area and generating a top-down A4 schematic for visual impairment accessibility planning.
 
 ## Author
@@ -42,19 +44,3 @@ npm run build
 ```
 
 The Vite base path is `./`, so the generated `dist` folder can run from a GitHub Pages project site path.
-
-## Deploy To GitHub Pages
-
-The included workflow deploys the static Vite build to GitHub Pages when changes are pushed to `main`.
-
-In the repository settings, set **Pages** to deploy from **GitHub Actions**.
-
-Expected repository: [ChristosBouronikos/haptic-map-schematic](https://github.com/ChristosBouronikos/haptic-map-schematic)
-
-Expected Pages URL after the first successful workflow run: [https://christosbouronikos.github.io/haptic-map-schematic/](https://christosbouronikos.github.io/haptic-map-schematic/)
-
-If the published site opens as a blank page and the browser reports a 404 for `/src/main.jsx`, GitHub Pages is still serving the repository source HTML instead of the built `dist` output. Switch the Pages source to **GitHub Actions** and rerun the workflow.
-
-## Data Notes
-
-The app runs entirely in the browser. It uses a neutral CARTO light basemap with OpenStreetMap attribution for the map view, and Overpass API for feature data. Large selected areas can return many buildings and roads, so the app keeps category-specific render limits for a responsive schematic preview.
